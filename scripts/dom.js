@@ -12,5 +12,12 @@ function sum() {
 }
 
 function reset() {
+  let valueOfFirstInput = getFirstInput.value;
+  valueOfFirstInput = "";
+  let valueOfSecondInput = getSecondInput.value;
+  valueOfSecondInput = "";
+  const result = document.getElementById("result");
+  result.textContent = "";
+  console.log(result);
   console.log("Vous avez cliquer");
 }
