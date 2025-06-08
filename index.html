@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+  </head>
+  <body>
+    <div class="container bg-warning w-25 m-auto mt-5 py-5 rounded">
+      <h1 class="text-black text-center text-sm fs-3 text-uppercase">
+        Les opérations
+      </h1>
+
+      <form onsubmit="calculer(event)">
+        <div class="mb-3">
+          <label for="firstnumber" class="form-label">Premier nombre</label>
+          <input
+            type="number"
+            name="firstnumber"
+            id="firstnumber"
+            class="form-control"
+            placeholder="Entrer votre premier nombre"
+            required="required"
+          />
+        </div>
+
+        <div class="mb-3">
+          <label for="secondnumber" class="form-label">Second nombre</label>
+          <input
+            type="number"
+            name="secondnumber"
+            id="secondnumber"
+            class="form-control"
+            placeholder="Entrer votre deuxième nombre"
+            required="required"
+          />
+        </div>
+
+        <div class="mb-3">
+          <label for="" class="form-label">Opérations</label>
+          <select
+            class="form-select form-select-lg"
+            name="operations"
+            id="operations"
+            required="required"
+          >
+            <option selected>Selectionnez une opération</option>
+            <option value="1">Addition +</option>
+            <option value="2">Multiplication x</option>
+            <option value="3">Division /</option>
+            <option value="4">Soustraction -</option>
+            <option value="5">Modulo %</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn btn-primary w-100">Calculer</button>
+      </form>
+
+      <div class="col-4 mt-2">
+        <p>Resultat : <span id="result"></span></p>
+      </div>
+    </div>
+
+    <!-- Script -->
+    <script src="./scripts/main.js" type="text/javascript"></script>
+  </body>
+</html>
